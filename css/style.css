@@ -45,6 +45,7 @@ body {
    flex-direction: column;
    gap: 1rem;
    width: 90%;
+   max-width: 500px;
 }
 
 .left,
@@ -191,4 +192,17 @@ input[type="range"]::-webkit-slider-thumb {
    font-weight: 600;
    color: var(--Very-Dark-Blue);
    font-size: 2.4rem;
+}
+
+/* *************************************  */
+/* ? ************* desktop *************  */
+/* *************************************  */
+
+@media screen and (min-width: 1067px) {
+   .main {
+      flex-direction: row;
+      max-width: 1000px;
+      gap: 2rem;
+      height: 20rem;
+   }
 }
