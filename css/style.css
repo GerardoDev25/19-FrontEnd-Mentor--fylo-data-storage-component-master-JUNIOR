@@ -199,10 +199,78 @@ input[type="range"]::-webkit-slider-thumb {
 /* *************************************  */
 
 @media screen and (min-width: 1067px) {
+   html,
+   body {
+      background-color: var(--Very-Dark-Blue);
+      background-image: url(../images/bg-desktop.png);
+      background-size: 100%;
+      background-position-y: 130%;
+   }
+
    .main {
+      max-height: 17rem;
       flex-direction: row;
       max-width: 1000px;
       gap: 2rem;
       height: 20rem;
+   }
+
+   .left {
+      width: 70%;
+      justify-content: space-evenly;
+      gap: 1rem;
+   }
+
+   .left__logo {
+      width: 50%;
+   }
+
+   .icons {
+      width: 65%;
+      gap: 0;
+      justify-content: space-between;
+   }
+
+   .icons__item {
+      height: 4rem;
+      width: 4rem;
+   }
+
+   .right {
+      height: 80%;
+      align-self: flex-end;
+   }
+
+   .right__paragraph {
+      text-align: left;
+      width: 100%;
+   }
+
+   .right__input {
+      width: 98%;
+   }
+
+   .right__input::before {
+      width: 78%;
+   }
+
+   .tooltip {
+      bottom: 80%;
+      right: 3rem;
+      max-width: 15rem;
+      border-radius: 0.7rem;
+      border-bottom-right-radius: 0;
+      height: 45%;
+   }
+
+   .tooltip::after {
+      content: "";
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: white;
+      position: absolute;
+      bottom: -30%;
+      right: 0;
+      clip-path: polygon(0 0, 100% 100%, 100% 0);
    }
 }
